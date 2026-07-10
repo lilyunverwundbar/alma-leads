@@ -1,4 +1,8 @@
+import os
 from pathlib import Path
+
+os.environ["DATABASE_URL"] = "sqlite:///./storage/test_leads.db"
+os.environ["SMTP_HOST"] = ""
 
 from fastapi.testclient import TestClient
 

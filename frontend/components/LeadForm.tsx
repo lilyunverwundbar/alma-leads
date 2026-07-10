@@ -10,12 +10,13 @@ export function LeadForm() {
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    const form = event.currentTarget;
     setStatus("saving");
     setMessage("");
 
     try {
-      await submitLead(new FormData(event.currentTarget));
-      event.currentTarget.reset();
+      await submitLead(new FormData(form));
+      form.reset();
       setStatus("success");
       setMessage("Thanks. Your information was submitted and confirmation emails were queued.");
     } catch (error) {
