@@ -4,9 +4,9 @@ Full-stack lead intake application for public prospect submissions and authentic
 
 ## Stack
 
-- Backend: FastAPI, SQLAlchemy, SQLite, SMTP-compatible email integration
+- Backend: FastAPI, SQLAlchemy, SQLite, sendGrid email integration
 - Frontend: NextJS App Router, TypeScript, plain CSS
-- Storage: SQLite for lead metadata, local filesystem for uploaded resumes
+- Storage: SQLite for lead metadata(can be upgraded to Postgres), local filesystem for uploaded resumes(can be upgraded to s3 storage)
 
 ## Local Setup
 
