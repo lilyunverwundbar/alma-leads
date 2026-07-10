@@ -1,0 +1,14 @@
+.DS_Store
+.env
+.venv/
+node_modules/
+.next/
+dist/
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.db
+backend/storage/resumes/*
+backend/storage/outbox/*
+!backend/storage/resumes/.gitkeep
+!backend/storage/outbox/.gitkeep
